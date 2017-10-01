@@ -39,6 +39,7 @@
                              #p"README.markdown"
                              (or *load-pathname* *compile-file-pathname*))
                             :if-does-not-exist nil
+                            :external-format :utf-8
                             :direction :input)
       (when stream
         (let ((seq (make-array (file-length stream)
